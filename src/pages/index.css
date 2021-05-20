@@ -1,0 +1,205 @@
+@import "../css/typhography.css";
+
+/* Rectangle 3 */
+.main-block{
+position: absolute;
+width: 1440px;
+height: 850px;
+left: 0px;
+top: 0px;
+background: linear-gradient(135.12deg, #FF8A00 22.51%, #FF0000 119.25%);
+}
+
+.right-line{
+position: absolute;
+width: 739px;
+height: 900.67px;
+left: 757px;
+top: -50.67px;
+}
+.bottom-line{
+position: absolute;
+width: 1648.57px;
+height: 932.68px;
+left: -65px;
+top: 634.5px;
+}
+.header-text{
+position: absolute;
+width: 123px;
+height: 32px;
+left: 70px;
+top: 48px;
+font-family: "Montserrat";
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 30px;
+color:#fff;
+text-transform: uppercase;
+}
+.header-icon{
+position: absolute;
+width: 48px;
+height: 60px;
+left: 198px;
+top: 28px;
+}
+.portfolio{
+position: absolute;
+width: 110px;
+height: 16px;
+left: 513px;
+top: 50px;
+font-family:"Montserrat";
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+color: #fff
+}
+.contacts{
+position: absolute;
+width: 93px;
+height: 16px;
+left: 650px;
+top: 50px;
+font-family: "Montserrat";
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+color: #fff; 
+}
+.phone-icon{
+position: absolute;
+left: 58.75%;
+right: 39.97%;
+top: 5.91%;
+bottom: 98.78%;
+}
+.number{
+ position: absolute;
+width: 152px;
+height: 16px;
+left: 877px;
+top: 50px;
+font-family: "Montserrat";
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+color: #fff;
+}
+.contact-us{
+    position: absolute;
+    height: 28px;
+    left: 1250px;
+    right: 36px;
+    top:40px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 40px;
+    /* or 267% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    border-color: #FF8A00;
+    background-color: #fff;
+    padding: 20px;
+    color: #FF8A00;
+}
+.header-tagline{
+position: absolute;
+width: 691px;
+height: 144px;
+left: 70px;
+top: 291px;
+/* H1 */
+
+font-family: "Gilroy";
+font-style: normal;
+font-weight: 900;
+font-size: 30px;
+line-height: 75px;
+color: #fff;
+}
+.header-tagline-h1{
+    padding: 0;
+    margin: 0;
+}
+.triangle{
+position: absolute;
+width: 691px;
+height: 144px;
+left: 80px;
+top: 200px;
+}
+.upside-down-triangle-dashed{
+position: absolute;
+right: 76.58%;
+top: -3%;
+transform: rotate(-123.39deg);
+}
+
+.upside-down-triangle{
+position: absolute;
+left: 14.79%;
+right: 82.56%;
+top: 4.12%;
+bottom: 95.28%;
+transform: rotate(-123.39deg);
+}
+.plus-small{
+position: absolute;
+left: 59.17%;
+right: 39.56%;
+top: 20.13%;
+bottom: 26.54%;
+transform: rotate(-169.15deg);
+}
+.triangle-standart{
+    position: absolute;
+left: 53.9%;
+right: 44.32%;
+top: 34.9%;
+transform: rotate(113.65deg);
+}
+.services{
+position: absolute;
+width: 632px;
+height: 27px;
+left: 70px;
+top: 434px;
+font-family: "Gilroy";
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 23px;
+color: #fff;
+display: flex;
+justify-content:space-evenly;
+}
+.leave-request_button{
+position: absolute;
+height: 28px;
+left: 37px;
+right: 37px;
+top: 550px;
+font-family: "Montserrat";
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 40px;
+display: flex;
+align-items: center;
+text-align: center;
+border-radius: 20px;
+border-color: #FF8A00;
+background-color: #fff;
+padding: 25px;
+color: #FF8A00;
+}
