@@ -251,16 +251,16 @@ line-height: 54px;
     top: 970.5px;
     border-radius: 100px;
     
-    stroke-dasharray: 5000;
-    stroke-dashoffset: 1000;
-    animation: dash 2s linear infinite;
+    stroke-dasharray: 6150;
+    stroke-dashoffset: 0;
+    animation: dash 5s linear alternate infinite running;
 }
 @keyframes dash {
     from {
-      stroke-dashoffset: 2000;
+      stroke-dashoffset: 0;
     }
     to {
-      stroke-dashoffset: 0;
+      stroke-dashoffset: 6150;
     }
   }
 .animation_svg-bottom-line{
@@ -270,7 +270,21 @@ line-height: 54px;
     left: 301.94px;
     top: 970px;
     border-radius: 110px;
+
+    stroke-dasharray: 6150;
+    stroke-dashoffset: 1000;
+    animation: bottom-line 5s linear alternate infinite running;
 }
+@keyframes bottom-line {
+    0%{
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dashoffset: 6150;
+
+    }
+  }
+
 .start-flag{
     position: absolute;
 width: 80px;
