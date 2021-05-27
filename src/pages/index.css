@@ -226,8 +226,8 @@ top: 669px;
     position: absolute;
     width: 1742.57px;
     height: 1542px;
-    left: -159px;
-    top: 607px;
+    left: 50px;
+    top: -70px;
 }
 .how-we-work_text{
     position: absolute;
@@ -242,7 +242,12 @@ font-weight: bold;
 font-size: 45px;
 line-height: 54px;
 }
-
+.how-we-work-vector{
+    position: absolute;
+left: 50px;
+top: 930px;
+opacity: 0.9;
+}
 .animation_svg-upper-line{
     position: absolute;
     width: 822px;
@@ -353,7 +358,7 @@ left: 1068px;
 top: 892px;
 
 }
-.animation-circle{
+.animation-target-circle{
     position: absolute;
 width: 80px;
 height: 80px;
@@ -363,3 +368,222 @@ top: 1043px;
 background: #FFFFFF;
 box-sizing: border-box;
 }
+.animation-target-circle_text{
+    position: absolute;
+width: 378px;
+height: 24px;
+left: -400px;
+top: 5px;
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 500;
+font-size: 23px;
+line-height: 27px;
+}
+.animation-target-circle-first{
+    position: absolute;
+    left: 36px;
+    top: 36px; 
+}
+.animation-target-circle-second{
+    position: absolute;
+    left: 36px;
+    top: 36px; 
+}
+.animation-target-circle-third{
+    position: absolute;
+    left: 29px;
+    top: 29px; 
+}
+.animation-target-circle-fourth{
+    position: absolute;
+    left: 28px;
+    top: 28px; 
+}
+.animation-target-circle-fifth{
+    position: absolute;
+    left: 22px;
+    top: 21px; 
+}
+.animation-target-circle-sixth{
+    position: absolute;
+    left: 20px;
+    top: 20px; 
+}
+.animation-time-is-money{
+position: absolute;
+left: 262px;
+top: 1242px;
+box-sizing: border-box;
+}
+.time-is-money{
+    position: absolute;
+    left: 20px;
+    top: 15px; 
+}
+.animation-time-is-money_text{
+    position: absolute;
+width: 326px;
+height: 24px;
+left: 100px;
+top: 5px;
+
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 500;
+font-size: 23px;
+line-height: 27px;
+}
+.plane-work-iteration_text{
+    position: absolute;
+width: 312px;
+height: 24px;
+left: 725px;
+top: 1430px;
+
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 500;
+font-size: 23px;
+line-height: 27px;
+}
+.plane-work-iteration-circle{
+    position: absolute;
+width: 80px;
+height: 80px;
+left: 1068px;
+top: 1424px;
+
+box-sizing: border-box;
+}
+.plane-work-iteration-todo{
+    position: absolute;
+width: 40px;
+height: 40px;
+left: 1088px;
+top: 1444px;
+}
+.sign-contract-circle{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 263px;
+    top: 1613px;
+    
+
+    box-sizing: border-box;
+}
+.sign-contract-contract-icon{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 286px;
+    top: 1634px;
+}
+.sign-contract_text{
+    position: absolute;
+    width: 249px;
+    height: 24px;
+    left: 410px;
+    top: 1620px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 27px;
+}
+.doing-work_text{
+    position: absolute;
+    width: 206px;
+    height: 24px;
+    left: 831px;
+    top: 1800px;
+    
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 27px;
+}
+.doing-work-circle{
+    position: absolute;
+width: 80px;
+height: 80px;
+left: 1068px;
+top: 1791px;
+
+box-sizing: border-box;
+}
+.doing-work-man{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 1089px;
+    top: 1810px;
+}
+.receive-payment-circle{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 262px;
+    top: 1985px;
+
+}
+.receive-payment-money{
+    position: absolute;
+    width: 40px;
+    height: 26.85px;
+    left: 280px;
+    top: 2012px;
+}
+.receive-payment_text{
+    position: absolute;
+    width: 194px;
+    height: 24px;
+    left: 409px;
+    top: 1990px;
+    
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 27px;
+}
+.project-start-circle{
+    position: absolute;
+    left: 625px;
+    top: 2070px;
+    
+    background: #FFFFFF;
+
+}
+.project-start-startup{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 642px;
+    top: 2089px;
+}
+.project-start_text{
+    position: absolute;
+    width: 421px;
+    height: 23px;
+    left: 733px;
+    top: 2070px;
+    
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 27px;
+
+}
+.proservice-container{
+    position: absolute;
+    width: 1946px;
+    height: 600px;
+    left: 0px;
+    top: 2272px;
+    background-image: url('../images/proservice-background.png');
+    background-size: 100%;
+    }
