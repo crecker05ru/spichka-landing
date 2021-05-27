@@ -24,7 +24,7 @@ const IndexPage = () => {
     if(currPos.y < - 600 && currPos.y > - 800) {
       console.log('style')
       setAnimationStyle({strokeDashoffset: '6150'})
-  }else if(currPos.y < - 800 && currPos.y > - 1000) {
+  }else if(currPos.y < - 800 && currPos.y > - 1200) {
     setAnimationStyle({strokeDashoffset: '7300'})
   }else if(currPos.y < - 1200 && currPos.y > - 1400) {
     setAnimationStyle({strokeDashoffset: '8210'})

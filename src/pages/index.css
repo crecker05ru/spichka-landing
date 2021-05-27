@@ -293,6 +293,7 @@ line-height: 54px;
     border-radius: 110px;
 
     stroke-dasharray: 6150;
+    transition: .7s;
     /* stroke-dashoffset: 8220; */
     /* stroke-dashoffset: 9140; */
     /* stroke-dashoffset: 10050; */
