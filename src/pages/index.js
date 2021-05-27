@@ -1,5 +1,6 @@
-import * as React from "react"
+import  React, {useState} from "react"
 import './index.css'
+import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 import icon from "../images/spichka-icon.png"
 import phoneIcon from "../images/phone-icon.png"
 import upsideDownTriangleDashed from "../images/upside-down-triangle-dashed.png"
@@ -10,14 +11,38 @@ import circle from "../images/circle.png"
 import plusBig from "../images/plus-big.png"
 import obliqueLines from "../images/oblique-lines.png"
 import startFlag from "../images/start-flag.png"
-// markup
+
+
 const IndexPage = () => {
-  // function totalLength () {
-  //   let path = document.querySelector(".animation_svg-upper-line")
-  //   let len = Math.round(path.getAttributeNode )
-  //   console.log("length",len)
-  // }
-  // totalLength()
+
+  const [animationStyle, setAnimationStyle] = useState({
+    strokeDashoffset: '6150'
+  })
+
+  useScrollPosition(({ prevPos, currPos }) => {
+    console.log(currPos.y)
+    if(currPos.y < - 600 && currPos.y > - 800) {
+      console.log('style')
+      setAnimationStyle({strokeDashoffset: '6150'})
+  }else if(currPos.y < - 800 && currPos.y > - 1000) {
+    setAnimationStyle({strokeDashoffset: '7300'})
+  }else if(currPos.y < - 1200 && currPos.y > - 1400) {
+    setAnimationStyle({strokeDashoffset: '8210'})
+  }else if(currPos.y < - 1400 && currPos.y > - 1600) {
+    setAnimationStyle({strokeDashoffset: '9130'})
+  }else if(currPos.y < - 1600 && currPos.y > - 1800) {
+    setAnimationStyle({strokeDashoffset: '10050'})
+  }else if(currPos.y < - 1800 && currPos.y > - 2000){
+    setAnimationStyle({strokeDashoffset: '10970'})
+  }else if(currPos.y < - 2200 && currPos.y > - 2400){
+    setAnimationStyle({strokeDashoffset: '11890'})
+  }else if(currPos.y < - 2400 && currPos.y > - 2600){
+    setAnimationStyle({strokeDashoffset: '12300'})
+  }else{
+    return animationStyle
+  }
+  },[animationStyle])
+
   return (
     < >
       <div className="main-block">
@@ -70,17 +95,17 @@ const IndexPage = () => {
             <h2 className="how-we-work_text">Как мы работаем</h2>
             <div className="animation_svg-upper-line">
               <svg width="824" height="1146" viewBox="0 0 824 1146" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M383 1145H97.5C44.2045 1145 1 1101.8 1 1048.5V1048.5C1 995.205 44.2045 952 97.5 952H724.81C773.55 952 813.06 912.489 813.06 863.75V863.75C813.06 815.011 773.55 775.5 724.81 775.5H98.25C44.5403 775.5 1 731.96 1 678.25V678.25C1 624.54 44.5403 581 98.25 581H724.58C773.446 581 813.06 541.386 813.06 492.52V492.52C813.06 443.653 773.446 404.039 724.58 404.039H99.3763C45.0446 404.039 1 359.995 1 305.663V305.663C1 251.331 45.0445 207.287 99.3762 207.287H713.06C768.289 207.287 813.06 162.515 813.06 107.287V17V6.46979C813.06 3.72505 815.285 1.5 818.03 1.5H819C821.209 1.5 823 3.29086 823 5.5V5.5" stroke="#FF4601" stroke-width="2"/>
+                  <path d="M383 1145H97.5C44.2045 1145 1 1101.8 1 1048.5V1048.5C1 995.205 44.2045 952 97.5 952H724.81C773.55 952 813.06 912.489 813.06 863.75V863.75C813.06 815.011 773.55 775.5 724.81 775.5H98.25C44.5403 775.5 1 731.96 1 678.25V678.25C1 624.54 44.5403 581 98.25 581H724.58C773.446 581 813.06 541.386 813.06 492.52V492.52C813.06 443.653 773.446 404.039 724.58 404.039H99.3763C45.0446 404.039 1 359.995 1 305.663V305.663C1 251.331 45.0445 207.287 99.3762 207.287H713.06C768.289 207.287 813.06 162.515 813.06 107.287V17V6.46979C813.06 3.72505 815.285 1.5 818.03 1.5H819C821.209 1.5 823 3.29086 823 5.5V5.5" stroke="#FF4601" strokeWidth="2"/>
               </svg>
             </div>
             <div className="animation_svg-bottom-line">
               <svg width="815" height="1144" viewBox="0 0 815 1144" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M374 1136.5L373 1131.5M373 1131.5H87.1896C40.1073 1131.5 1.93958 1093.33 1.93958 1046.25V1046.25C1.93958 999.168 40.1073 961 87.1896 961H716C770.124 961 814 917.124 814 863V863C814 808.876 770.124 765 716 765H89.4396C41.1147 765 1.93958 725.825 1.93958 677.5V677.5C1.93958 629.175 41.1147 590 89.4396 590H716.139C770.186 590 814 546.186 814 492.139V492.139C814 438.092 770.186 394.278 716.139 394.278H91.0785C41.8484 394.278 1.93958 354.369 1.93958 305.139V305.139C1.93958 255.909 41.8484 216 91.0785 216H704C764.751 216 814 166.751 814 106V25.2488V0M373 1131.5V1144" stroke="#FF4601" stroke-width="2"/>
+                  <path d="M374 1136.5L373 1131.5M373 1131.5H87.1896C40.1073 1131.5 1.93958 1093.33 1.93958 1046.25V1046.25C1.93958 999.168 40.1073 961 87.1896 961H716C770.124 961 814 917.124 814 863V863C814 808.876 770.124 765 716 765H89.4396C41.1147 765 1.93958 725.825 1.93958 677.5V677.5C1.93958 629.175 41.1147 590 89.4396 590H716.139C770.186 590 814 546.186 814 492.139V492.139C814 438.092 770.186 394.278 716.139 394.278H91.0785C41.8484 394.278 1.93958 354.369 1.93958 305.139V305.139C1.93958 255.909 41.8484 216 91.0785 216H704C764.751 216 814 166.751 814 106V25.2488V0M373 1131.5V1144" stroke="#FF4601" strokeWidth="2"/>
               </svg>
             </div>
-            <div className="animation-svg-start-finish">
+            <div className="animation-svg-start-finish" style={animationStyle}>
               <svg width="836" height="1144" viewBox="0 0 815 1144" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M374 1136.5L373 1131.5M373 1131.5H87.1896C40.1073 1131.5 1.93958 1093.33 1.93958 1046.25V1046.25C1.93958 999.168 40.1073 961 87.1896 961H716C770.124 961 814 917.124 814 863V863C814 808.876 770.124 765 716 765H89.4396C41.1147 765 1.93958 725.825 1.93958 677.5V677.5C1.93958 629.175 41.1147 590 89.4396 590H716.139C770.186 590 814 546.186 814 492.139V492.139C814 438.092 770.186 394.278 716.139 394.278H91.0785C41.8484 394.278 1.93958 354.369 1.93958 305.139V305.139C1.93958 255.909 41.8484 216 91.0785 216H704C764.751 216 814 166.751 814 106V25.2488V0M373 1131.5V1144" stroke="#FF4601" stroke-width="20"/>
+                  <path d="M374 1136.5L373 1131.5M373 1131.5H87.1896C40.1073 1131.5 1.93958 1093.33 1.93958 1046.25V1046.25C1.93958 999.168 40.1073 961 87.1896 961H716C770.124 961 814 917.124 814 863V863C814 808.876 770.124 765 716 765H89.4396C41.1147 765 1.93958 725.825 1.93958 677.5V677.5C1.93958 629.175 41.1147 590 89.4396 590H716.139C770.186 590 814 546.186 814 492.139V492.139C814 438.092 770.186 394.278 716.139 394.278H91.0785C41.8484 394.278 1.93958 354.369 1.93958 305.139V305.139C1.93958 255.909 41.8484 216 91.0785 216H704C764.751 216 814 166.751 814 106V25.2488V0M373 1131.5V1144" stroke="#FF4601" strokeWidth="20"/>
               </svg>
             </div>
                 <div className="start-flag">
@@ -88,7 +113,7 @@ const IndexPage = () => {
                 </div>
                 <div className="animation-circle">
                   <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="40" cy="40" r="36" fill="white" stroke="#FF4601" stroke-width="8"/>
+                      <circle cx="40" cy="40" r="36" fill="white" stroke="#FF4601" strokeWidth="8"/>
                   </svg>
                 </div>
             </div>

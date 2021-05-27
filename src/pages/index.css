@@ -301,7 +301,15 @@ line-height: 54px;
     /* stroke-dashoffset: 6150; */
     animation: start-finish-line 8s linear normal 1 running forwards;
 }
-@keyframes start-finish-line {
+/* @keyframes start-finish-line {
+    0%{
+        stroke-dashoffset: 6150;
+    }
+    100%{
+        stroke-dashoffset: 12300;
+    }
+} */
+/* @keyframes start-finish-line {
     0%{
         stroke-dashoffset: 6150;
     }
@@ -334,7 +342,7 @@ line-height: 54px;
     100%{
         stroke-dashoffset: 11890;
     }
-}
+} */
   
 .start-flag{
     position: absolute;
